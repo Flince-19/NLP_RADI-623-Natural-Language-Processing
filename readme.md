@@ -11,7 +11,7 @@ Repository for medical specialty classification from transcription using BERT as
 - Seeds were set at various steps with the set_custom_seed module.
 
 # Experiment Overview
-![](..\image\block_diagram.jpg)
+![](/image/block_diagram.jpg)
 The experiment consist of the following steps:
 - Data analysis. The data will be checked for null. The class distribution will be analysed and appropiate measure to deduplicate and transform the data to be multi-class data will be performed. Corpus statistic such as vocab size and token length would be analysed.
 - For data preprocessing, during class distribution analysis, the class will be encoded. The data will then be splitted into train/val/test set. The transcription will then be tokenized before feeding into the model. The tokenization is handled by the transformer libraly automatically which consist of tokenizing, padding/truncation, special token addition, creation of attention_mask and segmentation_id which is the format required for BERT model. The preprocssing (after train/val/test splitting) is done sequentially by the data_setup custom module which is used to create custom dataset and custom data loader.
