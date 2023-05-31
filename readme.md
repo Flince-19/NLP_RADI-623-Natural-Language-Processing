@@ -62,7 +62,7 @@ Trancation from left resulted in substantially worse performance. Perhaps Most o
 # Model 3: BERT_bidirectional_LSTM
 The LSTM used in the last 2 models was unidirectional. In [2005, Graves](https://www.cs.toronto.edu/~graves/ijcnn_2005.pdf) presented bidirectional LSTM (BLSTM) network. In contrast to unidirectional LSTM, bidirectional LSTM process the sequence in two direction, forward and backward, allowing the model to capture information from both the past and present. As noted by the author, this seems to violate casuality but the behavior is much like how we, human, analyse information. When we are reading, information presented in the current, or next, passage can helps elucidate previous information from the previous passage. In practice, this effectively double the amount of hidden neuron of the LSTM. BLSTM beat LSTM in the phenome classification task from audio in the TIMIT database by 3% in the paper. <br>
 
-![](image\bidirectional_LSTM.png)
+![](image/bidirectional_LSTM.png)
 
 Since in our last experiment, trauncation from left did not yield good results, we revert to default truncation. Setting bidirection = True multiplies the hidden unit by 2. The total params is also increased.
 
