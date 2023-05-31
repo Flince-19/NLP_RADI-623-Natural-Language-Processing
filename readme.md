@@ -1,5 +1,5 @@
 # Medical Specialty Classification using BERT
-Repository for medical specialty classification from transcription using BERT as part of RADI 623: Natural Language Processing See the notebook in 'src\specialty_classification.ipynb' for the code. The code was written in Pytorch. 
+Repository for medical specialty classification from transcription using BERT as part of RADI 623: Natural Language Processing. Explore the notebook in 'src\specialty_classification.ipynb' for the code. The code was written in Pytorch. 
 
 ## Note
 - The trained model is too large for github. You can download the checkpoint via [google drive](https://drive.google.com/drive/folders/1NM78-nTTuuaP57IL1Pequwz_cNzy-pI1?usp=sharing).
