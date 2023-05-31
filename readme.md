@@ -3,7 +3,7 @@ Repository for medical specialty classification from transcription using BERT as
 
 ## Note
 - The trained model are too large for github. You can download the checkpoint via [google drive](https://drive.google.com/drive/folders/1NM78-nTTuuaP57IL1Pequwz_cNzy-pI1?usp=sharing).
-- The data folder is used to store mtsamples.csv. THe image folder is used to store figures. The model fodler is used to stored checkpoint and results dictionary in pickle. The src folder contain all the source code and the notebook.
+- The data folder is used to store mtsamples.csv. THe image folder is used to store figures. The model folder is used to stored checkpoint and results dictionary in pickle. The src folder contain all the source code and the notebook.
 - The notebook utilize various modules for the pipeline. The codes, including the training loop, were modified from the 
 [Zero to Mastery Learn PyTorch for Deep Learning course](www.learnpytorch.io).
 - Torch version 2.0 and torchvision version 0.15 were used. However, torch version >= 1.12.0 should be enough.
